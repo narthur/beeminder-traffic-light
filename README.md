@@ -19,7 +19,9 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - Type `ifconfig` and find IP address of device on your network ([source](https://itsfoss.com/ssh-into-raspberry/))
 - On a different computer on the network, enter `ssh pi@[your pi's IP]` and provide password (default is raspberry) ([source](https://itsfoss.com/ssh-into-raspberry/))
 
-## Pi Commands
+## Terminal Commands
+
+### Pi
 
 Run these commands on the pi, either directly or via an SSH connection.
 
@@ -29,7 +31,7 @@ Command         | Description
 `sudo poweroff` | Turn off Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
 `sudo reboot`   | Reboot Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
 
-## Remote Commands
+### Remote
 
 Command                 | Description
 ------------------------|---------------
