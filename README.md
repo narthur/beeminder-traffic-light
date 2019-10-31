@@ -26,8 +26,8 @@ Run these commands on the pi, either directly or via an SSH connection.
 Command         | Description
 ----------------|---------------
 `ifconfig`      | Find IP address of device
-`sudo poweroff` | Turn off Pi ((source)[https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal])
-`sudo reboot`   | Reboot Pi ((source)[https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal])
+`sudo poweroff` | Turn off Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
+`sudo reboot`   | Reboot Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
 
 ## Remote Commands
 
