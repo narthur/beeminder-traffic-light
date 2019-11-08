@@ -18,6 +18,18 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - Open Terminal
 - Type `ifconfig` and find IP address of device on your network ([source](https://itsfoss.com/ssh-into-raspberry/))
 - On a different computer on the network, enter `ssh pi@[your pi's IP]` and provide password (default is raspberry) ([source](https://itsfoss.com/ssh-into-raspberry/))
+- Install Mu (may already be installed): `sudo apt-get install mu-editor`
+
+### Configure Remote Desktop
+
+- SSH into Pi
+- `sudo raspi-config`
+- Navigate to boot options, and set to 'Console - Text console, requiring login'
+- Hit right arrow key until 'Finish' is highlighted, and press enter, opting to reboot the Pi when asked
+- Reconnect via SSH once Pi has rebooted
+- Install remote desktop server on Pi via SSH: `sudo apt-get install xrdp`
+- Open (or install as needed) Microsoft Remote Desktop
+- Configure new connection, using Pi's IP as computer name, and `pi` as username
 
 ## Terminal Commands
 
