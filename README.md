@@ -18,7 +18,7 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - Open Terminal
 - Type `ifconfig` and find IP address of device on your network ([source](https://itsfoss.com/ssh-into-raspberry/))
 - On a different computer on the network, enter `ssh pi@[your pi's IP]` and provide password (default is raspberry) ([source](https://itsfoss.com/ssh-into-raspberry/))
-- Install Mu (may already be installed): `sudo apt-get install mu-editor`
+- Install [Mu](https://codewith.mu/) (may already be installed): `sudo apt-get install mu-editor`
 
 ### Configure Remote Desktop
 
