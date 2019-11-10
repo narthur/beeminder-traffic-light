@@ -37,11 +37,12 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 
 Run these commands on the pi, either directly or via an SSH connection.
 
-Command         | Description
-----------------|---------------
-`ifconfig`      | Find IP address of device
-`sudo poweroff` | Turn off Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
-`sudo reboot`   | Reboot Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
+Command             | Description
+--------------------|---------------
+`ifconfig`          | Find IP address of device
+`sudo poweroff`     | Turn off Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
+`sudo reboot`       | Reboot Pi ([source](https://askubuntu.com/questions/187071/how-do-i-shut-down-or-reboot-from-a-terminal))
+`sudo raspi-config` | Configure Pi - [docs](https://www.raspberrypi.org/documentation/configuration/raspi-config.md)
 
 ### Remote
 
