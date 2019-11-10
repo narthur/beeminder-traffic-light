@@ -20,6 +20,14 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - On a different computer on the network, enter `ssh pi@[your pi's IP]` and provide password (default is raspberry) ([source](https://itsfoss.com/ssh-into-raspberry/))
 - Install [Mu](https://codewith.mu/) (may already be installed): `sudo apt-get install mu-editor`
 
+### Configure Git
+
+- Set Git username: `git config --global user.name "John Doe"`
+- Set Git email: `git config --global user.email johndoe@example.com`
+- Check your changes: `git config --list`
+
+[Source](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+
 ### Configure Remote Desktop
 
 - SSH into Pi
