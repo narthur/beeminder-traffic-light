@@ -10,7 +10,7 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - For setup: monitor, keyboard, mouse
 - Monitor adapter, if needed, such as [this VGA one](https://www.amazon.com/dp/B07QFVK1T6/ref=pe_825000_114665720_TE_item?pldnSite=1)
 
-## Instructions
+## Setup Instructions
 
 - [Install Raspbian on mini SD card](https://www.raspberrypi.org/documentation/installation/installing-images/)
 - Log into device using a monitor and keyboard
@@ -38,6 +38,19 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - Install remote desktop server on Pi via SSH: `sudo apt-get install xrdp`
 - Open (or install as needed) Microsoft Remote Desktop
 - Configure new connection, using Pi's IP as computer name, and `pi` as username
+
+## Finding Your Pi's IP Address
+
+### Option 1
+
+- Boot the Pi using a keyboard and monitor connected directly to it.
+- Open terminal.
+- Type `ifconfig` and find IP address of device on your network ([source](https://itsfoss.com/ssh-into-raspberry/))
+
+### Option 2
+
+- Download Adafruit-Pi-Finder on a separate machine.
+- Launch the program and click "Find My Pi!"
 
 ## Terminal Commands
 
