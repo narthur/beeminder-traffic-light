@@ -41,7 +41,7 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 
 ## Finding Your Pi's IP Address
 
-You may need to find your Pi's IP multiple times unless you assign a static IP to it.
+Your Pi's IP may change periodically unless you assign a static IP to it.
 
 - Boot the Pi using a keyboard and monitor connected directly to it.
 - Open terminal.
