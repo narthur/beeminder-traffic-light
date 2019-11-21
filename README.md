@@ -41,16 +41,11 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 
 ## Finding Your Pi's IP Address
 
-### Option 1
+You may need to find your Pi's IP multiple times unless you assign a static IP to it.
 
 - Boot the Pi using a keyboard and monitor connected directly to it.
 - Open terminal.
 - Type `ifconfig` and find IP address of device on your network ([source](https://itsfoss.com/ssh-into-raspberry/))
-
-### Option 2
-
-- Download Adafruit-Pi-Finder on a separate machine.
-- Launch the program and click "Find My Pi!"
 
 ## Terminal Commands
 
