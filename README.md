@@ -32,7 +32,7 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 
 - SSH into Pi
 - `sudo raspi-config`
-- Navigate to boot options, and set to 'Console - Text console, requiring login'
+- Navigate to boot options, and set to "Console Autologin - Text console, automatically logged in as 'pi' user"
 - Hit right arrow key until 'Finish' is highlighted, and press enter, opting to reboot the Pi when asked
 - Reconnect via SSH once Pi has rebooted
 - Install remote desktop server on Pi via SSH: `sudo apt-get install xrdp`
