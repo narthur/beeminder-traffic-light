@@ -39,16 +39,18 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 - Open (or install as needed) Microsoft Remote Desktop
 - Configure new connection, using Pi's IP as computer name, and `pi` as username
 
-### Clone Repository
-
-- `cd` to desired location
-- `git clone https://github.com/narthur/beeminder-traffic-light.git`
-
 ### Mount Lights
 
 Mount the traffic light component on [GPIO pins 9, 10, and 11](http://wiki.lowvoltagelabs.com/pitrafficlight). If you're using the Pi 4 model B ([pin diagram](https://www.bing.com/images/search?view=detailV2&ccid=LDlhNxJm&id=4DA30A2412110CC0A88B181E13BCA66D130496B7&thid=OIP.LDlhNxJm-Kzo_chrKANPcwHaJB&mediaurl=https%3a%2f%2fmaker.pro%2fstorage%2fg9KLAxU%2fg9KLAxUiJb9e4Zp1xcxrMhbCDyc3QWPdSunYAoew.png&exph=647&expw=531&q=raspberry+pi+4+model+b+gpio+diagram&simid=608029650227039598&selectedIndex=1), it should look like [this](http://wiki.lowvoltagelabs.com/_detail/40pin_pi_traffic_installed.jpg?id=pitrafficlight), with 7 pins to the left of the lights:
 
 ![mounted lights](http://wiki.lowvoltagelabs.com/_media/40pin_pi_traffic_installed.jpg?cache=)
+
+### Clone & Run Project
+
+- `cd` to desired location
+- `git clone https://github.com/narthur/beeminder-traffic-light.git`
+- `cd` into `beeminder-traffic-light` directory
+- `python main.py`
 
 ## Finding Your Pi's IP Address
 
