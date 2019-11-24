@@ -47,6 +47,7 @@ Mount the traffic light component on [GPIO pins 9, 10, and 11](http://wiki.lowvo
 
 ### Clone & Run Project
 
+- SSH into Pi
 - `cd` to desired location
 - `git clone https://github.com/narthur/beeminder-traffic-light.git`
 - `cd` into `beeminder-traffic-light` directory
