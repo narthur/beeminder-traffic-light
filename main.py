@@ -4,6 +4,7 @@ from pyminder.beeminder import Beeminder
 import os
 import yaml
 import time
+import datetime
 
 base_dir = os.path.dirname(os.path.realpath(__file__))
 config = yaml.load(open(f"{base_dir}/config.yaml", "r"), Loader=yaml.FullLoader)
@@ -13,15 +14,23 @@ bm = Beeminder()
 bm.set_username(config['beeminder']['user'])
 bm.set_token(config['beeminder']['token'])
 
-goals = bm.get_goals()
-lose_dates = [g['losedate'] for g in goals]
-lose_date = min(lose_dates)
-now = time.time()
-remaining = lose_date - now
+def get_color():
+    goals = bm.get_goals()
+    lose_dates = [g['losedate'] for g in goals]
+    lose_date = min(lose_dates)
+    today = datetime.datetime.today()
+    tomorrow = today + datetime.timedelta(days=1)
+    red_bound = today.replace(hour=23, minute=59, second=59).timestamp()
+    yellow_bound = tomorrow.replace(hour=23, minute=59, second=59).timestamp()
 
-print(f'Now: {now}')
-print(f'Lose Date: {lose_date}')
-print(f'Remaining: {remaining}')
+    if lose_date <= red_bound:
+        return 'red'
+    elif lose_date <= yellow_bound:
+        return 'yellow'
+    else:
+        return 'green'
+
+print(get_color())
 
 # Pin Setup:
 GPIO.setmode(GPIO.BCM)   # Broadcom pin-numbering scheme. This uses the pin numbers that match the pin numbers on the Pi Traffic light.
