@@ -41,7 +41,7 @@ Information on using a Raspberry Pi as a Beeminder traffic light
 
 ### Mount Lights
 
-Mount the traffic light component on [GPIO pins 9, 10, and 11](http://wiki.lowvoltagelabs.com/pitrafficlight). If you're using the Pi 4 model B ([pin diagram](https://maker.pro/storage/g9KLAxU/g9KLAxUiJb9e4Zp1xcxrMhbCDyc3QWPdSunYAoew.png), it should look like [this](http://wiki.lowvoltagelabs.com/_detail/40pin_pi_traffic_installed.jpg?id=pitrafficlight), with 7 pins to the left of the lights:
+Mount the traffic light component on [GPIO pins 9, 10, and 11](http://wiki.lowvoltagelabs.com/pitrafficlight). If you're using the Pi 4 model B ([pin diagram](https://maker.pro/storage/g9KLAxU/g9KLAxUiJb9e4Zp1xcxrMhbCDyc3QWPdSunYAoew.png)), it should look like [this](http://wiki.lowvoltagelabs.com/_detail/40pin_pi_traffic_installed.jpg?id=pitrafficlight), with 7 pins to the left of the lights:
 
 ![mounted lights](http://wiki.lowvoltagelabs.com/_media/40pin_pi_traffic_installed.jpg?cache=)
 
