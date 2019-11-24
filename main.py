@@ -1,5 +1,27 @@
 import RPi.GPIO as GPIO
 import time
+from pyminder.beeminder import Beeminder
+import os
+import yaml
+import time
+
+base_dir = os.path.dirname(os.path.realpath(__file__))
+config = yaml.load(open(f"{base_dir}/config.yaml", "r"), Loader=yaml.FullLoader)
+
+bm = Beeminder()
+
+bm.set_username(config['beeminder']['user'])
+bm.set_token(config['beeminder']['token'])
+
+goals = bm.get_goals()
+lose_dates = [g['losedate'] for g in goals]
+lose_date = min(lose_dates)
+now = time.time()
+remaining = lose_date - now
+
+print(f'Now: {now}')
+print(f'Lose Date: {lose_date}')
+print(f'Remaining: {remaining}')
 
 # Pin Setup:
 GPIO.setmode(GPIO.BCM)   # Broadcom pin-numbering scheme. This uses the pin numbers that match the pin numbers on the Pi Traffic light.

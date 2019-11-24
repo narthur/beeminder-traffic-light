@@ -1,0 +1,6 @@
+# Copy this file to config.yaml and update using values from this URL:
+# https://www.beeminder.com/api/v1/auth_token.json
+
+beeminder:
+  user: <UserName>
+  token: <Token>
