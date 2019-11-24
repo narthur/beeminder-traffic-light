@@ -51,6 +51,8 @@ Mount the traffic light component on [GPIO pins 9, 10, and 11](http://wiki.lowvo
 - `git clone https://github.com/narthur/beeminder-traffic-light.git`
 - `cd` into `beeminder-traffic-light` directory
 - `python3 -m pip install --user -r requirements.txt`
+- `cp config-example.yaml config.yaml`
+- Edit `config.yaml` with [your username and auth token](https://www.beeminder.com/api/v1/auth_token.json)
 - `python3 main.py`
 
 ## Finding Your Pi's IP Address
